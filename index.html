@@ -13,7 +13,7 @@
         )
     </script>
 </head>
-<body class=" bg-gray-100 dark:bg-zinc-800">
+<body class=" font-dana bg-gray-100 dark:bg-zinc-800">
 <!--  SVG Icons  -->
 <svg class="hidden">
     <symbol id="shopping-cart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
@@ -28,6 +28,11 @@
     <symbol id="arrow-right-end-on-rectangle" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15M12 9l3 3m0 0-3 3m3-3H2.25" />
     </symbol>
+    <symbol id="chevron-left" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+    </symbol>
+
+
 </svg>
 
 <header class="fixed top-9 left-0 right-0 flex items-center w-[90%] h-24 mx-auto  px-10 py-5 bg-black/50 rounded-3xl backdrop-blur-[12px]">
@@ -39,15 +44,15 @@
                 <img src="./images/app-logo.png" alt="Golden Coffee">
             </div>
             <!-- Menu -->
-            <ul class="flex gap-x-9 text-xl  text-gray-300 tracking-tightest  child:leading-[56px]">
-                <li>
-                    <a href="#" class="font-dana-Medium text-orange-200">صفحه اصلی</a>
+            <ul class="flex gap-x-9 text-xl  text-gray-300 tracking-tighter child:leading-[56px] ">
+                <li class="font-dana-Medium text-orange-200">
+                    <a href="#">صفحه اصلی</a>
                 </li>
                 <!-- Has Sub Menu -->
                 <li class="relative group h-full hover:text-orange-300 transition-colors">
                     <a href="#">فروشگاه</a>
                     <!-- Sub Menu -->
-                    <div class="absolute top-full w-52 invisible opacity-0 space-y-4 pt-5 pb-7 dark:bg-zinc-700 dark:text-white  px-6 border-t-[3px] border-orange-1000 rounded-2xl text-zinc-700 text-base bg-white child:inline-block child:tracking-normal child-hover:text-orange-300 child:transition-all group-hover:opacity-100 group-hover:visible transition-all">
+                    <div class="absolute top-full invisible opacity-0 group-hover:opacity-100 group-hover:visible  shadow-normal space-y-4 pt-5 pb-7 w-52 bg-white  dark:bg-zinc-700 dark:text-white text-zinc-700 text-base  px-6 border-t-[3px] border-t-orange-1000 rounded-2xl  child:inline-block child:tracking-normal child-hover:text-orange-300 child:transition-all ">
 
                             <a href="#">قهوه ویژه</a>
                             <a href="#">ویژه در سطح جهانی</a>
@@ -76,16 +81,29 @@
         <div class="flex items-center text-orange-200 text-xl gap-x-10">
             <!-- Theme Switch btn & Cart -->
             <!-- Cart -->
-            <div>
+            <div class="relative group">
             <!-- Cart Icon -->
-                <div class="py-3">
+                <div class="py-3 cursor-pointer">
                     <svg class="w-8 h-8">
                         <use href="#shopping-cart"></use>
                     </svg>
                 </div>
-            <!-- Cart Menu -->
-                <div>
-
+            <!-- Cart Box-->
+                <div class="absolute top-full left-0 invisible opacity-0  w-[400px] p-5 group-hover:opacity-100 group-hover:visible bg-white dark:bg-zinc-700 border-t-[3px] border-t-orange-1000 shadow-normal rounded-2xl transition-all">
+            <!-- Cart Header-->
+                <div class="flex items-center justify-between text-xs tracking-tighter font-dana-Medium">
+                    <span class="text-gray-300">1 مورد</span>
+                    <a href="#" class="flex items-center gap-x-2 text-orange-300">
+                        مشاهده سبد خرید
+                        <svg class="w-5 h-5">
+                            <use href="#chevron-left"></use>
+                        </svg>
+                    </a>
+                </div>
+            <!-- Cart Body-->
+                    <div></div>
+            <!-- Cart Footer-->
+                    <div></div>
                 </div>
             </div>
             <!-- Theme Switch btn -->
