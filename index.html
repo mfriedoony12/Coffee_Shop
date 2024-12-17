@@ -35,16 +35,16 @@
 
 </svg>
 
-<header class="fixed top-9 left-0 right-0 flex items-center w-[90%] h-24 mx-auto  px-10 py-5 bg-black/50 rounded-3xl backdrop-blur-[12px]">
+<header class="fixed top-9 left-0 right-0 hidden md:flex items-center w-[98%] lg:w-[90%] h-24 mx-auto  px-5 lg:px-10 py-5 bg-black/50 rounded-3xl backdrop-blur-[12px]">
     <div class="flex justify-between w-full">
         <!-- Menu & Logo & Sub Menu -->
-        <nav class="flex items-center gap-x-9">
+        <nav class="flex items-center gap-x-6 lg:gap-x-9">
             <!-- Logo -->
             <div>
-                <img src="./images/app-logo.png" alt="Golden Coffee">
+                <img class="flex-shrink-0" src="./images/app-logo.png" alt="Golden Coffee">
             </div>
             <!-- Menu -->
-            <ul class="flex gap-x-9 text-xl  text-gray-300 tracking-tightest child:leading-[56px] ">
+            <ul class="flex gap-x-5 lg:gap-x-9 text-xl  text-gray-300 tracking-tightest child:leading-[56px] ">
                 <li class="font-dana-Medium text-orange-200">
                     <a href="#">صفحه اصلی</a>
                 </li>
@@ -78,9 +78,10 @@
             </ul>
         </nav>
         <!-- Cart & Theme Toggle & Login  -->
-        <div class="flex items-center text-orange-200 text-xl gap-x-10">
+        <div class="flex items-center text-orange-200 text-xl gap-4 xl:gap-x-10">
             <!-- Theme Switch btn & Cart -->
             <!-- Cart -->
+            <div class="flex items-center gap-x-4 xl:gap-x-5">
             <div class="relative group">
             <!-- Cart Icon -->
                 <div class="py-3 cursor-pointer">
@@ -92,8 +93,8 @@
                 <div class="absolute top-full left-0 invisible opacity-0 w-[400px] p-5 group-hover:opacity-100 group-hover:visible bg-white dark:bg-zinc-700 border-t-[3px] border-t-orange-1000 shadow-normal rounded-2xl transition-all">
             <!-- Cart Header-->
                 <div class="flex items-center justify-between text-xs tracking-tighter font-dana-Medium">
-                    <span class="text-gray-300">1 مورد</span>
-                    <a href="#" class="flex items-center gap-x-2 text-orange-300">
+                    <span class="text-gray-300">2 مورد</span>
+                    <a href="#" class="flex items-center text-orange-300">
                         مشاهده سبد خرید
                         <svg class="w-5 h-5">
                             <use href="#chevron-left"></use>
@@ -101,19 +102,36 @@
                     </a>
                 </div>
             <!-- Cart Body-->
-                    <div class="flex justify-between py-5 border-b border-b-gray-300 dark:border-white/10">
-                        <img src="./images/products/p2.png" class="w-30 h-30" alt="Product 2">
-                        <div class="flex flex-col gap-y-6 justify-between">
-                            <h4 class="text-zinc-700 dark:text-white font-dana-Medium text-base">قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
+                    <div class="border-b border-b-gray-300 dark:border-white/10 divide-y divide-gray-100 dark:divide-white/5">
+                        <div class="flex justify-between p-6">
+                            <img src="./images/products/p1.png" class="w-30 h-30" alt="Product 2">
+                            <div class="flex flex-col gap-y-6 justify-between">
+                                <h4 class="text-zinc-700 dark:text-white font-dana-Medium text-base">قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
+                                <div>
+                                    <span class="text-teal-600 dark:text-emerald-500 font-dana-Medium tracking-tighter text-xs">14.500 تومان تخفیف</span>
 
-                            <div>
-                              <span class="text-teal-600 dark:text-emerald-500 font-dana-Medium tracking-tighter text-xs">14.500 تومان تخفیف</span>
-
-                                <div class="text-zinc-700 dark:text-white font-dana-DemiBold">
-                               175,000
-                                    <span class="font-dana text-sm">تومان</span>
+                                    <div class="text-zinc-700 dark:text-white font-dana-DemiBold">
+                                        175,000
+                                        <span class="font-dana text-sm">تومان</span>
+                                    </div>
                                 </div>
                             </div>
+
+                        </div>
+                        <div class="flex justify-between p-6">
+                            <img src="./images/products/p2.png" class="w-30 h-30" alt="Product 2">
+                            <div class="flex flex-col gap-y-6 justify-between">
+                                <h4 class="text-zinc-700 dark:text-white font-dana-Medium text-base">قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
+                                <div>
+                                    <span class="text-teal-600 dark:text-emerald-500 font-dana-Medium tracking-tighter text-xs">14.500 تومان تخفیف</span>
+
+                                    <div class="text-zinc-700 dark:text-white font-dana-DemiBold">
+                                        175,000
+                                        <span class="font-dana text-sm">تومان</span>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
             <!-- Cart Footer-->
@@ -138,6 +156,7 @@
                     <use href="#sun"></use>
                 </svg>
             </div>
+            </div>
             <!-- border  -->
             <span class="block w-px h-14 bg-white/20"></span>
             <!-- Login Link -->
@@ -145,7 +164,7 @@
                 <svg class="w-8 h-8">
                     <use href="#arrow-right-end-on-rectangle"></use>
                 </svg>
-                <span>ورود | ثبت‌نام</span>
+                <span class="hidden xl:inline-block">ورود | ثبت‌نام</span>
             </a>
         </div>
     </div>
