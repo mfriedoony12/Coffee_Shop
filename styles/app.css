@@ -615,6 +615,14 @@ video {
   height: 6rem;
 }
 
+.h-30 {
+  height: 7.5rem;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
 .h-8 {
   height: 2rem;
 }
@@ -623,16 +631,16 @@ video {
   height: 100%;
 }
 
-.h-10 {
-  height: 2.5rem;
+.w-30 {
+  width: 7.5rem;
 }
 
-.h-4 {
-  height: 1rem;
+.w-36 {
+  width: 9rem;
 }
 
-.h-5 {
-  height: 1.25rem;
+.w-5 {
+  width: 1.25rem;
 }
 
 .w-52 {
@@ -641,6 +649,10 @@ video {
 
 .w-8 {
   width: 2rem;
+}
+
+.w-\[400px\] {
+  width: 400px;
 }
 
 .w-\[90\%\] {
@@ -655,28 +667,24 @@ video {
   width: 1px;
 }
 
-.w-\[400\] {
-  width: 400;
-}
-
-.w-\[400px\] {
-  width: 400px;
-}
-
-.w-4 {
-  width: 1rem;
-}
-
-.w-5 {
-  width: 1.25rem;
-}
-
 .cursor-pointer {
   cursor: pointer;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .items-center {
   align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -692,14 +700,26 @@ video {
        column-gap: 2.5rem;
 }
 
+.gap-x-2 {
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+
 .gap-x-9 {
   -moz-column-gap: 2.25rem;
        column-gap: 2.25rem;
 }
 
-.gap-x-2 {
-  -moz-column-gap: 0.5rem;
-       column-gap: 0.5rem;
+.gap-y-6 {
+  row-gap: 1.5rem;
+}
+
+.gap-y-\[50px\] {
+  row-gap: 50px;
+}
+
+.gap-y-\[5px\] {
+  row-gap: 5px;
 }
 
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
@@ -716,12 +736,25 @@ video {
   border-radius: 1.5rem;
 }
 
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
 .border {
   border-width: 1px;
 }
 
+.border-b {
+  border-bottom-width: 1px;
+}
+
 .border-t-\[3px\] {
   border-top-width: 3px;
+}
+
+.border-b-gray-300 {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(209 213 219 / var(--tw-border-opacity, 1));
 }
 
 .border-t-orange-1000 {
@@ -736,6 +769,11 @@ video {
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
+}
+
+.bg-teal-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(13 148 136 / var(--tw-bg-opacity, 1));
 }
 
 .bg-white {
@@ -783,6 +821,10 @@ video {
   font-family: Dana;
 }
 
+.font-dana-DemiBold {
+  font-family: Dana DemiBold;
+}
+
 .font-dana-Medium {
   font-family: Dana Medium;
 }
@@ -790,6 +832,11 @@ video {
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-xl {
@@ -802,12 +849,12 @@ video {
   line-height: 1rem;
 }
 
-.tracking-tightest {
-  letter-spacing: -0.065em;
-}
-
 .tracking-tighter {
   letter-spacing: -0.05em;
+}
+
+.tracking-tightest {
+  letter-spacing: -0.065em;
 }
 
 .text-gray-300 {
@@ -820,14 +867,24 @@ video {
   color: rgb(254 215 170 / var(--tw-text-opacity, 1));
 }
 
-.text-zinc-700 {
-  --tw-text-opacity: 1;
-  color: rgb(63 63 70 / var(--tw-text-opacity, 1));
-}
-
 .text-orange-300 {
   --tw-text-opacity: 1;
   color: rgb(253 186 116 / var(--tw-text-opacity, 1));
+}
+
+.text-teal-600 {
+  --tw-text-opacity: 1;
+  color: rgb(13 148 136 / var(--tw-text-opacity, 1));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.text-zinc-700 {
+  --tw-text-opacity: 1;
+  color: rgb(63 63 70 / var(--tw-text-opacity, 1));
 }
 
 .opacity-0 {
@@ -912,7 +969,7 @@ video {
   }
 
   body{
-    background-image: url(../images/headerBgDesktop.png);
+    background-image: url(../images/headerBgDesktop.webp);
     background-repeat: no-repeat;
   }
 }
@@ -961,6 +1018,15 @@ video {
   display: none;
 }
 
+.dark\:border-white\/10:is(.dark *) {
+  border-color: rgb(255 255 255 / 0.1);
+}
+
+.dark\:bg-emerald-500:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(16 185 129 / var(--tw-bg-opacity, 1));
+}
+
 .dark\:bg-zinc-700:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(63 63 70 / var(--tw-bg-opacity, 1));
@@ -969,6 +1035,11 @@ video {
 .dark\:bg-zinc-800:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(39 39 42 / var(--tw-bg-opacity, 1));
+}
+
+.dark\:text-emerald-500:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(16 185 129 / var(--tw-text-opacity, 1));
 }
 
 .dark\:text-white:is(.dark *) {
