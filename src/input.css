@@ -38,5 +38,8 @@
     body{
         background-image: url(../images/headerBgDesktop.webp);
         background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 90vh;
     }
 }
