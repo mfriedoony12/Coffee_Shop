@@ -41,3 +41,24 @@
         background-size: cover;
     }
 }
+
+@layer components {
+    .submenu-item--active{
+    position: relative;
+    color: #fdba74;
+    padding-right: 10px;
+    }
+    .submenu-item--active::after{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        border-radius: 100px;
+        background: #fdba74;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+}

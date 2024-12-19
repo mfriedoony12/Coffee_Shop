@@ -222,9 +222,9 @@
 
 
 <!-- Mobile Header -->
-<div class="flex md:hidden items-center justify-between h-16 px-4 bg-white dark:bg-zinc-700">
+<div class="flex md:hidden items-center justify-between h-16 px-4 bg-white dark:bg-zinc-700" >
     <!-- Nav -->
-    <div class="fixed top-0 right-0 bottom-0 w-64 min-h-screen pt-3 pb-5 px-4  bg-white dark:bg-zinc-700 z-20">
+    <div class="fixed top-0 right-0 w-64 max-h-screen pt-3 pb-5 px-4  bg-white dark:bg-zinc-700 z-20 overflow-y-auto">
     <!-- Nav-Header -->
     <div class="flex items-center justify-between border-b border-b-gray-100 dark:border-b-white/10 pb-5">
 
@@ -257,20 +257,29 @@
         </div>
     <div>
         <ul class="child:pr-2.5 space-y-6 text-zinc-600 dark:text-white mb-8">
-            <li class="flex items-center justify-between">
-                <a href="#" class="flex items-center gap-x-2.5">
-                    <svg class="w-5 h-5">
-                        <use href="#shopping-bag"></use>
-                    </svg>
+            <li>
+                    <div class="flex items-center justify-between ">
+                        <a href="#" class="flex items-center gap-x-2.5">
+                        <svg class="w-5 h-5">
+                            <use href="#shopping-bag"></use>
+                        </svg>
+                        فروشگاه
+                        </a>
+                        <span>
+                             <svg class="w-4 h-4">
+                                <use href="#chevron-up"></use>
+                             </svg>
+                         </span>
 
-                    فروشگاه
-
-                </a>
-                <span>
-                     <svg class="w-4 h-4">
-                        <use href="#chevron-up"></use>
-                    </svg>
-                    </span>
+                    </div>
+                    <div class="flex flex-col pr-7 mt-3 gap-y-3">
+                        <a href="#">قهوه ویژه</a>
+                        <a href="#" class="submenu-item--active">ویژه در سطح جهانی</a>
+                        <a href="#">قهوه درجه یک</a>
+                        <a href="#">ترکیبات تجاری</a>
+                        <a href="#">کپسول قهوه</a>
+                        <a href="#">قهوه زینو برزیلی</a>
+                    </div>
             </li>
             <li>
                 <a href="#" class="flex items-center gap-x-2">
@@ -310,33 +319,6 @@
             </li>
         </ul>
 
-
-
-                <ul class="px-[26px] hidden">
-                    <li>
-                        <a href="#">قهوه ویژه</a>
-                    </li>
-
-                    <li>
-                        <a href="#">ویژه در سطح جهانی</a>
-                    </li>
-
-                    <li>
-                        <a href="#">قهوه درجه یک</a>
-                    </li>
-
-                    <li>
-                        <a href="#">ترکیبات تجاری</a>
-                    </li>
-
-                    <li>
-                        <a href="#">کپسول قهوه</a>
-                    </li>
-
-                    <li>
-                        <a href="#">قهوه زینو برزیلی</a>
-                    </li>
-                </ul>
     </div>
     <!-- Nav-Footer-->
     <div class="flex flex-col items-start gap-y-6 border-t border-t-gray-100 dark:border-t-white/10 pt-8 px-2.5 text-orange-300">
