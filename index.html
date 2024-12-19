@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee shop</title>
+    <title>Coffee Shop</title>
     <link rel="stylesheet" href="./styles/app.css">
     <link rel="icon" href="./images/fav-icon.png" type="images/png">
     <script type="text/javascript">
@@ -224,7 +224,7 @@
 <!-- Mobile Header -->
 <div class="flex md:hidden items-center justify-between h-16 px-4 bg-white dark:bg-zinc-700" >
     <!-- Nav -->
-    <div class="fixed top-0 right-0 bottom-0 w-64 pt-3 pb-5 px-4  bg-white dark:bg-zinc-700 z-20 overflow-y-auto">
+    <div class="nav fixed top-0 -right-64 bottom-0 w-64 pt-3 pb-5 px-4  bg-white dark:bg-zinc-700 z-20 overflow-y-auto transition-all duration-300">
     <!-- Nav-Header -->
     <div class="flex items-center justify-between border-b border-b-gray-100 dark:border-b-white/10 pb-5">
 
@@ -240,9 +240,11 @@
 
     </div>
 
-        <svg class="w-5 h-5 text-zinc-600 dark:text-white">
-            <use xlink:href="#x-mark"></use>
-        </svg>
+       <div class="nav-close-btn">
+           <svg class="w-5 h-5 text-zinc-600 dark:text-white">
+               <use xlink:href="#x-mark"></use>
+           </svg>
+       </div>
 
     </div>
     <!-- Nav-Menu  -->
@@ -256,7 +258,7 @@
             </a>
         </div>
     <div>
-        <ul class="child:pr-2.5 space-y-6 text-zinc-600 dark:text-white mb-8">
+        <ul class="child:pr-2.5 space-y-6 text-zinc-700 dark:text-white mb-8">
             <li>
                     <div class="flex items-center justify-between ">
                         <a href="#" class="flex items-center gap-x-2.5">
@@ -265,14 +267,14 @@
                         </svg>
                         فروشگاه
                         </a>
-                        <span>
+                        <span class="submenu-open-btn transition-all duration-300">
                              <svg class="w-4 h-4">
                                 <use href="#chevron-up"></use>
                              </svg>
                          </span>
 
                     </div>
-                    <div class="flex flex-col pr-7 mt-3 gap-y-3">
+                    <div class="submenu ">
                         <a href="#">قهوه ویژه</a>
                         <a href="#" class="submenu-item--active">ویژه در سطح جهانی</a>
                         <a href="#">قهوه درجه یک</a>
@@ -364,7 +366,7 @@
 
     </div>
     <!-- Header Icons -->
-    <div>
+    <div class="nav-icon">
         <svg class="w-6 h-6 text-zinc-700 dark:text-white">
             <use xlink:href="#bars-3"></use>
         </svg>
@@ -388,7 +390,7 @@
 
 
 
-    <div class="overlay fixed w-full h-full md:hidden inset-0 bg-black/40 z-10"></div>
+    <div class="overlay"></div>
 <script src="./scripts/app.js"></script>
 </body>
 </html>
