@@ -44,7 +44,7 @@
 
 @layer components {
     .submenu{
-        @apply invisible max-w-0 max-h-0  opacity-0 mb-0 overflow-hidden flex-col pr-7 text-zinc-600 dark:text-white mt-0 gap-y-3 transition-all ease-in-out duration-300;
+        @apply invisible max-w-0 max-h-0 opacity-0 mb-0 overflow-hidden flex-col pr-7 text-zinc-600 dark:text-white mt-0 gap-y-3 transition-all ease-in-out duration-300;
     }
     .submenu--open{
         @apply flex mt-3 max-h-[215px] max-w-full opacity-100 visible;
