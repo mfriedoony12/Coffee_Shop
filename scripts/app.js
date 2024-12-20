@@ -23,6 +23,7 @@ toggleThemeBtns.forEach(btn => {
 submenuOpenBtn.addEventListener("click", (e) => {
     e.currentTarget.parentElement.classList.toggle("text-orange-300");
     submenu.classList.toggle("submenu--open");
+    submenuOpenBtn.classList.toggle("rotate-180");
 })
 
 function closeNav() {
