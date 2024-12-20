@@ -559,6 +559,7 @@ video {
   margin-bottom: 0px;
   margin-top: 0px;
   max-height: 0px;
+  max-width: 0px;
   flex-direction: column;
   row-gap: 0.75rem;
   overflow: hidden;
@@ -581,6 +582,7 @@ video {
   margin-top: 0.75rem;
   display: flex;
   max-height: 215px;
+  max-width: 100%;
   opacity: 1;
 }
 
