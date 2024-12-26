@@ -91,7 +91,7 @@
                 <img class="flex-shrink-0" src="./images/app-logo.png" alt="Golden Coffee">
             </div>
             <!-- Menu -->
-            <ul class="flex gap-x-5 lg:gap-x-9 text-xl  text-gray-300 tracking-tightest child:leading-[56px] ">
+            <ul class="flex gap-x-5 lg:gap-x-9 text-xl  text-gray-300 child:transition-colors tracking-tightest child:leading-[56px] ">
                 <li class="font-dana-Medium text-orange-200">
                     <a href="#">صفحه اصلی</a>
                 </li>
@@ -110,16 +110,16 @@
 
                     </div>
                 </li>
-                <li>
+                <li class="hover:text-orange-300">
                     <a href="#">دیکشنری</a>
                 </li>
-                <li>
+                <li class="hover:text-orange-300">
                     <a href="#">بلاگ</a>
                 </li>
-                <li>
+                <li class="hover:text-orange-300">
                     <a href="#">درباره ما</a>
                 </li>
-                <li>
+                <li class="hover:text-orange-300">
                     <a href="#">تماس با ما</a>
                 </li>
             </ul>
@@ -245,7 +245,7 @@
 
         </div>
         <!-- Nav-Menu  -->
-            <div class="flex items-center bg-orange-200/20 text-orange-300 h-10 rounded-md pr-2.5 mb-4 mt-6">
+            <div class="main-menu__hover flex items-center transition-colors text-orange-300 h-10 rounded-md pr-2.5 mb-4 mt-6">
                 <a href="#" class="flex items-center gap-x-2.5">
                     <svg class="w-5 h-5">
                         <use href="#home"></use>
@@ -273,12 +273,12 @@
 
                         </div>
                         <div class="submenu ">
-                            <a href="#">قهوه ویژه</a>
+                            <a href="#" class="submenu-item--active">قهوه ویژه</a>
                             <a href="#" class="submenu-item--active">ویژه در سطح جهانی</a>
-                            <a href="#">قهوه درجه یک</a>
-                            <a href="#">ترکیبات تجاری</a>
-                            <a href="#">کپسول قهوه</a>
-                            <a href="#">قهوه زینو برزیلی</a>
+                            <a href="#" class="submenu-item--active">قهوه درجه یک</a>
+                            <a href="#" class="submenu-item--active">ترکیبات تجاری</a>
+                            <a href="#" class="submenu-item--active">کپسول قهوه</a>
+                            <a href="#" class="submenu-item--active">قهوه زینو برزیلی</a>
                         </div>
                 </li>
                 <li>
@@ -360,8 +360,6 @@
             </a>
         </div>
 
-
-
         </div>
         <!-- Header Icons -->
         <div class="nav-icon">
@@ -441,10 +439,21 @@
 
         </div>
 
-
+        </div>
             <div class="overlay"></div>
 
 <script src="./scripts/app.js"></script>
 <!--  App Main -->
+<main class="home bg-home-mobile xs:aspect-[2/1] md:aspect-auto h-[200px] xs:h-auto md:bg-home-desktop bg-no-repeat bg-cover bg-[center_top]">
+    <div class="container h-full md:min-h-screen flex items-center justify-end">
+          <div class="text-white">
+              <h2 class="font-Morabba-Bold text-2xl md:text-6xl mb-0.5 md:mb-2">قهوه عربیکا تانزانیا</h2>
+              <span class="font-Morabba-Light text-xl md:text-5xl">یک فنجان بالانس !</span>
+              <span class="block w-[100px] h-px md:h-0.5 bg-orange-300 my-3 md:my-8"></span>
+              <p class="text-xs md:text-2xl max-w-[201px] md:max-w-[460px]">قطعا نام آشنای عربیکا را شنیده اید، عربیکا یکی از گونه های قهوه است که در نواحی مختلف کمربند قهوه کشت میشود.</p>
+          </div>
+     </div>
+</main>
+
 </body>
 </html>

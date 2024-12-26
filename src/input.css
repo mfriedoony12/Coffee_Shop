@@ -3,9 +3,8 @@
 @tailwind utilities;
 
 @layer bsae {
-    /* =======================  Dana ======================= */
     @font-face {
-        font-family: Dana;
+        font-family: "Dana";
         src: url(../fonts/Dana/woff2/DanaFaNum-Regular.woff2) format("woff2");
         font-display: swap;
     }
@@ -19,26 +18,21 @@
         src: url(../fonts/Dana/woff2/DanaFaNum-DemiBold.woff2) format("woff2");
         font-display: swap;
     }
-    /* =======================  Morabba  ======================= */
+
     @font-face {
-        font-family: "Moraba Bold";
+        font-family: "Morabba Bold";
         src: url(../fonts/Morabba/woff2/Morabba-Bold.woff2) format("woff2");
         font-display: swap;
     }
     @font-face {
-        font-family: "Moraba Medium";
+        font-family: "Morabba Medium";
         src: url(../fonts/Morabba/woff2/Morabba-Medium.woff2) format("woff2");
         font-display: swap;
     }
     @font-face {
-        font-family: "Moraba Light";
+        font-family: "Morabba Light";
         src: url(../fonts/Morabba/woff2/Morabba-Light.woff2) format("woff2");
         font-display: swap;
-    }
-    body{
-        background-image: url(../images/headerBgDesktop.webp);
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 }
 
@@ -57,20 +51,30 @@
     }
     .submenu-item--active{
     position: relative;
-    color: #fdba74;
-    padding-right: 10px;
+    transition: all 150ms ease-in-out;
     }
     .submenu-item--active::after{
         content: "";
         display: block;
         position: absolute;
-        width: 4px;
-        height: 4px;
+        width: 0;
+        height: 0;
         border-radius: 100px;
         background: #fdba74;
         margin: auto;
         top: 0;
         right: 0;
         bottom: 0;
+    }
+    .submenu-item--active:hover::after{
+        width: 4px;
+        height: 4px;
+    }
+    .submenu-item--active:hover{
+        padding-right: 10px;
+        color: #fdba74;
+    }
+    .main-menu__hover:hover{
+        @apply bg-orange-200/20;
     }
 }
