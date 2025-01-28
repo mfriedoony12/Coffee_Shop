@@ -110,4 +110,17 @@
        }
 
 
+
+
+
+    .section-title{
+        @apply font-Morabba-Medium text-2xl md:text-5xl text-zinc-700 dark:text-white
+    }
+    .section-subtitle{
+        @apply inline-block font-Morabba-Light mt-0.5 md:mt-1.5 text-lg md:text-3xl text-zinc-700 dark:text-white
+    }
+    .section-link{
+    @apply flex items-center text-base md:text-xl md:gap-x-1 tracking-tightest h-10 pl-1 pr-3 rounded-md text-orange-300 transition-colors md:hover:bg-orange-300/20
+    }
+
 }

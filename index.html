@@ -89,6 +89,9 @@
     <symbol id="chevron-down-mini" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
         <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
     </symbol>
+    <symbol id="chevron-left-mini" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M11.78 5.22a.75.75 0 0 1 0 1.06L8.06 10l3.72 3.72a.75.75 0 1 1-1.06 1.06l-4.25-4.25a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" />
+    </symbol>
 
 </svg>
 <!-- Desktop Header -->
@@ -231,7 +234,7 @@
 <!-- Mobile Header -->
     <div class="flex md:hidden items-center justify-between h-16 px-4 bg-white dark:bg-zinc-700" >
         <!-- Nav -->
-        <div class="nav fixed top-0 -right-64 bottom-0 w-64 pt-3 pb-5 px-4  bg-white dark:bg-zinc-700 z-20 overflow-y-auto">
+        <div class="nav fixed top-0 -right-64 transition-all bottom-0 w-64 pt-3 pb-5 px-4  bg-white dark:bg-zinc-700 z-20 overflow-y-auto">
         <!-- Nav-Header -->
         <div class="flex items-center justify-between border-b border-b-gray-100 dark:border-b-white/10 pb-5">
 
@@ -268,14 +271,14 @@
             <div>
             <ul class="child:pr-2.5 space-y-6 text-zinc-700 dark:text-white mb-8">
                 <li>
-                        <div class="flex items-center justify-between transition-all duration-300">
+                        <div class="flex items-center justify-between transition-all">
                             <a href="#" class="flex items-center gap-x-2.5">
                             <svg class="w-5 h-5">
                                 <use href="#shopping-bag"></use>
                             </svg>
                             فروشگاه
                             </a>
-                            <span class="submenu-open-btn transition-all duration-300">
+                            <span class="submenu-open-btn transition-all">
                                  <svg class="w-4 h-4">
                                     <use href="#chevron-up"></use>
                                  </svg>
@@ -393,7 +396,7 @@
         </div>
 
         <!-- Cart -->
-        <div class="cart fixed top-0 z-20 -left-64 bottom-0 w-64 flex flex-col pt-5 px-4  bg-white dark:bg-zinc-700 overflow-y-auto transition-all duration-300">
+        <div class="cart fixed top-0 z-20 -left-64 bottom-0 w-64 flex flex-col pt-5 px-4  bg-white dark:bg-zinc-700 overflow-y-auto transition-all">
             <!-- Cart-Header -->
             <div class="flex items-center justify-between border-b border-b-gray-100 dark:border-b-white/10 pb-5">
 
@@ -474,20 +477,36 @@
 
         </div>
             <!-- Curve -->
-            <svg class="absolute bottom-0 left-0 right-0 mx-auto w-[100px] h-[22px] text-gray-100 dark:text-zinc-800">
+            <svg class="absolute hidden md:flex bottom-0 left-0 right-0 mx-auto w-[100px] h-[22px] text-gray-100 dark:text-zinc-800">
                 <use href="#curve" ></use>
                 </svg>
 
 
               <!-- Circle--Arrow -->
-              <div class="absolute bottom-0 translate-y-2/4 left-0 right-0 mx-auto flex justify-center items-center w-[30px] h-[30px] border-2 border-orange-300 rounded-full">
+              <div class="absolute hidden bottom-0 translate-y-2/4 left-0 right-0 mx-auto cursor-pointer md:flex justify-center items-center w-[30px] h-[30px] border-2 border-orange-300 rounded-full">
                 <svg class="w-5 h-5 text-zinc-700 dark:text-white transition-all duration-300 ease-in-out">
                     <use href="#chevron-down-mini"></use>
                 </svg>
             </div>
 
     </section>
-    <section class="product"></section>
+    <section class="product pt-8 md:pt-48">
+        <div class="container flex justify-between items-end">
+            <div>
+                <h3 class="section-title">جدیدترین محصولات</h3>
+                <span class="section-subtitle">فرآوری شده از دانه قهوه</span>
+            </div>
+            <div>
+                <a href="#" class="section-link">
+                    <span class="hidden md:inline-block">مشاهده همه محصولات</span>
+                    <span class="inline-block md:hidden">مشاهده همه</span>
+                    <svg class="w-5 h-5">
+                        <use href="#chevron-left-mini"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
 </main>
 
 
