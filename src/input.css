@@ -119,7 +119,7 @@
         @apply inline-block font-Morabba-Light mt-0.5 md:mt-1.5 text-lg md:text-3xl text-zinc-700 dark:text-white
     }
     .section-link{
-    @apply flex items-center text-base md:text-xl md:gap-x-1 tracking-tightest h-10 pl-1 pr-3 rounded-md text-orange-300 transition-colors md:hover:bg-orange-300/20
+        @apply flex items-center text-base md:text-xl md:gap-x-1 tracking-tightest h-10 pl-1 pr-3 rounded-md text-orange-300 transition-colors md:hover:bg-orange-300/20
     }
 
 
@@ -154,6 +154,44 @@
     .swiper-button-prev-custom,
     .swiper-button-next-custom{
         @apply w-9 h-9 md:w-11 md:h-11 bg-white dark:bg-zinc-700 cursor-pointer text-zinc-700 dark:text-white rounded-full transition-all hover:bg-gray-300 dark:hover:bg-white dark:hover:text-zinc-700
+    }
+
+
+
+    .services{
+        @apply relative
+    }
+
+
+    .services::after,
+    .services::before{
+        content: "";
+        position: absolute;
+        display: block;
+        margin: auto;
+        inset: 0;
+        background-color: #D1D5DB;
+    }
+
+    .services::after{
+        width: 1px;
+        height: calc(100% + 1.25rem);
+    }
+    .services::before{
+        width: calc(100% - 2rem);
+        height: 1px;
+    }
+
+    @media screen and (min-width: 480px) {
+        .services::after,
+        .services::before{
+            content: none;
+        }
+    }
+
+    html.dark .services::after,
+    html.dark .services::before{
+        background-color: rgba(255,255,255, 0.1);
     }
 }
 @layer utilities {
